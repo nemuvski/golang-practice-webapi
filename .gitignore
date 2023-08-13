@@ -1,0 +1,14 @@
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# IDEs and editors
+/.vscode/
+/.idea/
+
+# dotfiles
+.env.local

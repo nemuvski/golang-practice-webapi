@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  redis:
+    image: redis:7.0-alpine
+    container_name: playground-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - playground_redis_data:/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "1"
+
+volumes:
+  playground_redis_data:
+    driver: local
